@@ -1,0 +1,3 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as r}from"./index-D0pgMumq.js";import{M as i}from"./index-DQE7V4LH.js";import"./index-BZISi7jw.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-XCp79sX5.js";import"./index-C0qn59OO.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";function e(n){const o={h1:"h1",p:"p",...r(),...n.components};return t.jsxs(t.Fragment,{children:[t.jsx(i,{title:"Home"}),`
+`,t.jsx(o.h1,{id:"journey-ui",children:"Journey UI"}),`
+`,t.jsx(o.p,{children:"Design System do Journey UI"})]})}function h(n={}){const{wrapper:o}={...r(),...n.components};return o?t.jsx(o,{...n,children:t.jsx(e,{...n})}):e(n)}export{h as default};
