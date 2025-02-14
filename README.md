@@ -65,7 +65,22 @@ Importar esse código tailwind.css
 
 ## Documentações para adicionar
 
-- explicação geral e links de referencia
-- instalação da lib e uso simples
-- Como add componente + docs
-- como controlar versionamento
+1. explicação geral e links de referencia
+2. instalação da lib e uso simples
+4. como controlar versionamento
+
+## Passo a passo para criar novo componente com documentação
+- criar componente em /packages/react/src/components
+- export o componente em /packages/react/src/index.tsx
+- criar documentação em /packages/docs/src/stories
+
+## Como controlar versionamento
+
+Após alterações seguir os passos
+
+- Rodar npm run changeset
+- selecionar tipo de mudanças patch, minor ou major e adicionar descrição da mudança feita
+- Você pode ir adicionando outras alterações e após finalizar repetir o processo anterior, assim adicionando mais de uma mudança em uma mesma versão
+- Para atualizar a versão do pacote, rode primeiro npm run version-packages. Isso irá atualizar a versão e o Changelog dentro dos projetos alterados.
+- Para atualizar o pacote no npm é necessário ter permissão do pacote e estar logado com npm. Rode npm login e siga as instruções.
+- Logado no npm, para subir a atualização do pacote no npm, rode npm run release

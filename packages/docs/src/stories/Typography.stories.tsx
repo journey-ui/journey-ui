@@ -4,11 +4,16 @@ import { Typography, TypographyVariantsProps } from '@journey-ui/react'
 export default {
   title: 'Components/Typography',
   component: Typography,
-
   args: {
     children: 'Journey UI',
     variant: 'paragraph1',
   },
+  argTypes: {
+    variant: {
+      options: ['display1', 'display2', 'headline1', 'headline2', 'headline3', 'title1', 'title2', 'subtitle1', 'subtitle2', 'paragraph1', 'paragraph1b', 'paragraph2', 'paragraph2b', 'paragraph3', 'paragraph3b', 'caption1'],
+      control: 'inline-radio'
+    }
+  }
 } as Meta<TypographyVariantsProps>
 
 export const Display1: StoryObj<TypographyVariantsProps> = {

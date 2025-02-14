@@ -5,7 +5,7 @@ import { cva } from 'class-variance-authority'
 import { cn } from '../lib/utils'
 
 const typographyVariants = cva(
-  'font-normal',
+  '',
   {
     variants: {
       variant: {
