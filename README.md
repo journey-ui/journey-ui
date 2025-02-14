@@ -1,7 +1,15 @@
-# Estrutura Monorepo
+# Estrutura Monorepo (INCOMPLETA)
 
 - Estamos utilizando essa estruturar para poder gerenciar o pacote de componentes e a documentação com storybook ao mesmo tempo
 - É necessário estar em uma aplicação React ou Next com tailwind@v4 configurado
+
+
+## Packages
+
+- react: Pacote público, implementação dos componentes do design system em react
+
+
+## Instalação da lib e exemplo (INCOMPLETA)
 
 Importar esse código tailwind.css
 
@@ -53,21 +61,6 @@ Importar esse código tailwind.css
 }
 ```
 
-## Packages
-
-- tokens: Pacote público, contém os tokens do design system sem nenhuma dependencia externa (cores, fontes, tamanhos, etc).
-- react: Pacote público, implementação dos componentes do design system em react
-- eslint-config e ts-config: Pacote privado, visto apenas dentro do monorepo para que a configuração do eslint seja reaproveitada entre os projetos do monorepo
-
-## Erros para corrigir
-
-- fix: deploy documentação storybook
-
-## Documentações para adicionar
-
-1. explicação geral e links de referencia
-2. instalação da lib e uso simples
-4. como controlar versionamento
 
 ## Passo a passo para criar novo componente com documentação
 - criar componente em /packages/react/src/components
@@ -84,3 +77,7 @@ Após alterações seguir os passos
 - Para atualizar a versão do pacote, rode primeiro npm run version-packages. Isso irá atualizar a versão e o Changelog dentro dos projetos alterados.
 - Para atualizar o pacote no npm é necessário ter permissão do pacote e estar logado com npm. Rode npm login e siga as instruções.
 - Logado no npm, para subir a atualização do pacote no npm, rode npm run release
+
+## Erros para corrigir
+
+- fix: deploy documentação storybook
